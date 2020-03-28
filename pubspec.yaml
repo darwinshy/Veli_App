@@ -58,6 +58,17 @@ flutter:
     - family: rob
       fonts:
        - asset: asset/robot.ttf   
+    - family: OpenSans
+      fonts:
+        - asset: asset/fonts/OpenSans-Bold.ttf
+        - asset: asset/fonts/OpenSans-Regular.ttf
+          weight: 700
+
+    - family: QuickSand
+      fonts:
+        - asset: asset/fonts/Quicksand-Regular.ttf
+        - asset: asset/fonts/Quicksand-Bold.ttf
+          weight: 700
   # To add assets to your application, add an assets section, like this:
   # assets:
   #  - images/a_dot_burr.jpeg
