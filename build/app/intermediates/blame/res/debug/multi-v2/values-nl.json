@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-nl\\values-nl.xml",
+            "outputFile": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-nl\\values-nl.xml",
             "map": [
                 {
                     "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0512c031ad0b8445f58af2ffa851c193\\jetified-play-services-basement-17.0.0\\res\\values-nl\\values.xml",
