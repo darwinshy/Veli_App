@@ -12,8 +12,8 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\debug\AndroidManifest.xml:6:5-66
-14-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\debug\AndroidManifest.xml:6:22-64
+14-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\debug\AndroidManifest.xml:6:22-64
 15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 15-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\shashwat\.gradle\caches\transforms-2\files-2.1\dbaf000348e0c02982764b53f4e979d8\play-services-measurement-17.2.2\AndroidManifest.xml:24:5-79
 15-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\shashwat\.gradle\caches\transforms-2\files-2.1\dbaf000348e0c02982764b53f4e979d8\play-services-measurement-17.2.2\AndroidManifest.xml:24:22-76
@@ -34,104 +34,104 @@
 24         FlutterApplication and put your custom class here.
 25    -->
 26    <application
-26-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:8:5-42:19
+26-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:8:5-42:19
 27        android:name="io.flutter.app.FlutterApplication"
-27-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:9:9-57
+27-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:9:9-57
 28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 28-->[androidx.core:core:1.0.0] C:\Users\shashwat\.gradle\caches\transforms-2\files-2.1\ce530c5b50dc774f16b6e9179ea6d25d\core-1.0.0\AndroidManifest.xml:22:18-86
 29        android:debuggable="true"
 30        android:icon="@mipmap/ic_launcher"
-30-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:11:9-43
+30-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:11:9-43
 31        android:label="veli"
-31-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:10:9-29
+31-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:10:9-29
 32        android:supportsRtl="true" >
 32-->[com.facebook.android:facebook-android-sdk:5.15.3] C:\Users\shashwat\.gradle\caches\transforms-2\files-2.1\b7d2c2be338568566e1ed5ba63034452\facebook-android-sdk-5.15.3\AndroidManifest.xml:28:18-44
 33        <activity
-33-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:12:9-24:20
+33-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:12:9-24:20
 34            android:name="com.example.veli.MainActivity"
-34-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:13:13-41
+34-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:13:13-41
 35            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-35-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:16:13-163
+35-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:16:13-163
 36            android:hardwareAccelerated="true"
-36-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:17:13-47
+36-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:17:13-47
 37            android:launchMode="singleTop"
-37-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:14:13-43
+37-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:14:13-43
 38            android:screenOrientation="portrait"
-38-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:18:13-49
+38-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:18:13-49
 39            android:theme="@style/LaunchTheme"
-39-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:15:13-47
+39-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:15:13-47
 40            android:windowSoftInputMode="adjustResize" >
-40-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:19:13-55
+40-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:19:13-55
 41            <intent-filter>
-41-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:20:13-23:29
+41-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:20:13-23:29
 42                <action android:name="android.intent.action.MAIN" />
-42-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:21:17-68
-42-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:21:25-66
+42-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:21:17-68
+42-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:21:25-66
 43
 44                <category android:name="android.intent.category.LAUNCHER" />
-44-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:22:17-76
-44-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:22:27-74
+44-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:22:17-76
+44-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:22:27-74
 45            </intent-filter>
 46        </activity>
 47
 48        <meta-data
-48-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:25:9-107
+48-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:25:9-107
 49            android:name="com.facebook.sdk.ApplicationId"
-49-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:25:20-65
+49-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:25:20-65
 50            android:value="@string/facebook_app_id" />
-50-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:25:66-105
+50-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:25:66-105
 51
 52        <activity
-52-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:26:1-27:102
+52-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:26:1-27:102
 53            android:name="com.facebook.FacebookActivity"
-53-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:26:11-55
+53-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:26:11-55
 54            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-54-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:26:56-145
+54-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:26:56-145
 55            android:label="@string/app_name"
-55-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:27:67-99
+55-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:27:67-99
 56            android:theme="@style/com_facebook_activity_theme" />
 56-->[com.facebook.android:facebook-common:5.15.3] C:\Users\shashwat\.gradle\caches\transforms-2\files-2.1\a7b52be8fa13a003c4e96fab468b5ca0\jetified-facebook-common-5.15.3\AndroidManifest.xml:33:13-63
 57        <activity
-57-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:29:1-36:12
+57-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:29:1-36:12
 58            android:name="com.facebook.CustomTabActivity"
-58-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:29:11-56
+58-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:29:11-56
 59            android:exported="true" >
-59-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:29:57-80
+59-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:29:57-80
 60            <intent-filter>
-60-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:30:5-35:21
+60-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:30:5-35:21
 61                <action android:name="android.intent.action.VIEW" />
-61-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:31:9-61
-61-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:31:17-58
+61-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:31:9-61
+61-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:31:17-58
 62
 63                <category android:name="android.intent.category.DEFAULT" />
-63-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:32:9-68
-63-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:32:19-65
+63-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:32:9-68
+63-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:32:19-65
 64                <category android:name="android.intent.category.BROWSABLE" />
-64-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:33:9-70
-64-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:33:19-67
+64-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:33:9-70
+64-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:33:19-67
 65
 66                <data android:scheme="@string/fb_login_protocol_scheme" />
-66-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:34:9-67
-66-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:34:15-64
+66-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:34:9-67
+66-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:34:15-64
 67            </intent-filter>
 68            <intent-filter>
 68-->[com.facebook.android:facebook-common:5.15.3] C:\Users\shashwat\.gradle\caches\transforms-2\files-2.1\a7b52be8fa13a003c4e96fab468b5ca0\jetified-facebook-common-5.15.3\AndroidManifest.xml:39:13-48:29
 69                <action android:name="android.intent.action.VIEW" />
-69-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:31:9-61
-69-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:31:17-58
+69-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:31:9-61
+69-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:31:17-58
 70
 71                <category android:name="android.intent.category.DEFAULT" />
-71-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:32:9-68
-71-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:32:19-65
+71-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:32:9-68
+71-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:32:19-65
 72                <category android:name="android.intent.category.BROWSABLE" />
-72-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:33:9-70
-72-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:33:19-67
+72-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:33:9-70
+72-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:33:19-67
 73
 74                <data
-74-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:34:9-67
+74-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:34:9-67
 75                    android:host="cct.com.example.veli"
 76                    android:scheme="fbconnect" />
-76-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:34:15-64
+76-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:34:15-64
 77            </intent-filter>
 78        </activity>
 79        <!--
@@ -139,38 +139,38 @@
 81             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 82        -->
 83        <meta-data
-83-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:39:9-41:33
+83-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:39:9-41:33
 84            android:name="flutterEmbedding"
-84-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:40:13-44
+84-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:40:13-44
 85            android:value="2" />
-85-->C:\Users\shashwat\Documents\GitHub\Veli\android\app\src\main\AndroidManifest.xml:41:13-30
+85-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:41:13-30
 86
 87        <service
-87-->[:firebase_auth] C:\Users\shashwat\Documents\GitHub\Veli\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+87-->[:firebase_auth] C:\Users\shashwat\Documents\GitHub\Veli_App\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
 88            android:name="com.google.firebase.components.ComponentDiscoveryService"
-88-->[:firebase_auth] C:\Users\shashwat\Documents\GitHub\Veli\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+88-->[:firebase_auth] C:\Users\shashwat\Documents\GitHub\Veli_App\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
 89            android:directBootAware="true"
 89-->[com.google.firebase:firebase-common:19.3.0] C:\Users\shashwat\.gradle\caches\transforms-2\files-2.1\9e2f2ff770f72e4be50dd8a9657cfc68\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
 90            android:exported="false" >
 90-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\shashwat\.gradle\caches\transforms-2\files-2.1\e4577aac3afa7ec004a3464e20f578bd\firebase-auth-19.2.0\AndroidManifest.xml:35:13-37
 91            <meta-data
-91-->[:firebase_auth] C:\Users\shashwat\Documents\GitHub\Veli\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+91-->[:firebase_auth] C:\Users\shashwat\Documents\GitHub\Veli_App\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 92                android:name="com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar"
-92-->[:firebase_auth] C:\Users\shashwat\Documents\GitHub\Veli\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-122
+92-->[:firebase_auth] C:\Users\shashwat\Documents\GitHub\Veli_App\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-122
 93                android:value="com.google.firebase.components.ComponentRegistrar" />
-93-->[:firebase_auth] C:\Users\shashwat\Documents\GitHub\Veli\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+93-->[:firebase_auth] C:\Users\shashwat\Documents\GitHub\Veli_App\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 94            <meta-data
-94-->[:cloud_firestore] C:\Users\shashwat\Documents\GitHub\Veli\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+94-->[:cloud_firestore] C:\Users\shashwat\Documents\GitHub\Veli_App\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 95                android:name="com.google.firebase.components:io.flutter.plugins.firebase.cloudfirestore.FlutterFirebaseAppRegistrar"
-95-->[:cloud_firestore] C:\Users\shashwat\Documents\GitHub\Veli\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-133
+95-->[:cloud_firestore] C:\Users\shashwat\Documents\GitHub\Veli_App\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-133
 96                android:value="com.google.firebase.components.ComponentRegistrar" />
-96-->[:cloud_firestore] C:\Users\shashwat\Documents\GitHub\Veli\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+96-->[:cloud_firestore] C:\Users\shashwat\Documents\GitHub\Veli_App\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 97            <meta-data
-97-->[:firebase_core] C:\Users\shashwat\Documents\GitHub\Veli\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+97-->[:firebase_core] C:\Users\shashwat\Documents\GitHub\Veli_App\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 98                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar"
-98-->[:firebase_core] C:\Users\shashwat\Documents\GitHub\Veli\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-123
+98-->[:firebase_core] C:\Users\shashwat\Documents\GitHub\Veli_App\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-123
 99                android:value="com.google.firebase.components.ComponentRegistrar" />
-99-->[:firebase_core] C:\Users\shashwat\Documents\GitHub\Veli\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+99-->[:firebase_core] C:\Users\shashwat\Documents\GitHub\Veli_App\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 100            <meta-data
 100-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\shashwat\.gradle\caches\transforms-2\files-2.1\e4577aac3afa7ec004a3464e20f578bd\firebase-auth-19.2.0\AndroidManifest.xml:36:13-38:85
 101                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
