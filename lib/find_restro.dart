@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:veli/login_page.dart';
 import 'package:veli/type.dart';
-import 'package:veli/sign_in.dart';
+import 'sign_in.dart';
 
 class Data {
   String nameofres;
@@ -13,11 +14,43 @@ class Data {
 }
 
 class FindRestroScreen extends StatelessWidget {
-  
+ 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: makeBottom,
+      bottomNavigationBar: Container(
+        height: 75.0,
+        child: BottomAppBar(
+          color: Colors.white,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              IconButton(
+                icon: Icon(Icons.fastfood, color: Colors.grey),
+                onPressed: () {},
+              ),
+              IconButton(
+                icon: Icon(Icons.settings, color: Colors.grey),
+                onPressed: () {},
+              ),
+              IconButton(
+                icon: Icon(Icons.exit_to_app, color: Colors.grey),
+                onPressed: () async {
+                  await googleSignIn.signOut().whenComplete(() {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return LoginPage(); //DemoScreen can be user profile also
+                        },
+                      ),
+                    );
+                  });
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: Text(
@@ -91,12 +124,13 @@ Widget _buildListItem(BuildContext context, DocumentSnapshot data) {
                       border: new Border(
                           right: new BorderSide(
                               width: 1.0, color: Colors.white24))),
-                  child: Icon(Icons.autorenew, color: Colors.black),
+                  child: Icon(Icons.fastfood, color: Colors.black),
                 ),
                 title: Text(
                   record.name,
                   style: TextStyle(
-                      color: Color.fromRGBO(0, 14, 104, 1),
+                      fontSize: 20,
+                      color: Colors.black87,
                       fontWeight: FontWeight.bold,
                       fontFamily: 'rob',
                       letterSpacing: 1),
@@ -107,9 +141,9 @@ Widget _buildListItem(BuildContext context, DocumentSnapshot data) {
                   children: <Widget>[
                     Text(record.details,
                         style: TextStyle(
-                            fontFamily: 'rob',
+                            fontFamily: 'QuickSand',
                             letterSpacing: 1,
-                            color: Color.fromRGBO(0, 14, 104, 1)))
+                            color: Colors.black87))
                   ],
                 ),
                 trailing: IconButton(
@@ -144,26 +178,36 @@ class Record {
   String toString() => "Record<$name:$details>";
 }
 
-Widget makeBottom = Container(
-  height: 75.0,
-  child: BottomAppBar(
-    color: Colors.white,
-    child: Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: <Widget>[
-        IconButton(
-          icon: Icon(Icons.fastfood, color: Colors.grey),
-          onPressed: () {},
-        ),
-        IconButton(
-          icon: Icon(Icons.settings, color: Colors.grey),
-          onPressed: () {},
-        ),
-        IconButton(
-          icon: Icon(Icons.account_circle, color: Colors.grey),
-          onPressed: () {},
-        ),
-      ],
-    ),
-  ),
-);
+// Widget makeBottom = Container(
+//   height: 75.0,
+//   child: BottomAppBar(
+//     color: Colors.white,
+//     child: Row(
+//       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//       children: <Widget>[
+//         IconButton(
+//           icon: Icon(Icons.fastfood, color: Colors.grey),
+//           onPressed: () {},
+//         ),
+//         IconButton(
+//           icon: Icon(Icons.settings, color: Colors.grey),
+//           onPressed: () {},
+//         ),
+//         IconButton(
+//           icon: Icon(Icons.exit_to_app, color: Colors.grey),
+//           onPressed: () async {
+//             await googleSignIn.signOut().whenComplete(() {
+//               Navigator.of(context).push(
+//                 MaterialPageRoute(
+//                   builder: (context) {
+//                     return FindRestroScreen(); //DemoScreen can be user profile also
+//                   },
+//                 ),
+//               );
+//             });
+//           },
+//         ),
+//       ],
+//     ),
+//   ),
+// );

@@ -52,15 +52,21 @@ Widget _buildBody(BuildContext context, Data z) {
 
 Widget _buildList(
     BuildContext context, List<DocumentSnapshot> snapshot, Data z) {
-  return ListView(
-    padding: const EdgeInsets.only(top: 10.0),
-    children: snapshot.map((data) => _buildListItem(context, data, z)).toList(),
-  );
+  // if (snapshot == null) {
+  if (snapshot.toList().isNotEmpty) {
+    return ListView(
+      padding: const EdgeInsets.only(top: 10.0),
+      children:
+          snapshot.map((data) => _buildListItem(context, data, z)).toList(),
+    );
+  } else
+    return Center(
+        child: Text("Sorry , the item is not available at the moment"));
 }
 
 Widget _buildListItem(BuildContext context, DocumentSnapshot data, Data z) {
   final record = Record.fromSnapshot(data);
-  
+
   String one = record.type.toString();
   String two = record.resName.toString();
 
@@ -85,27 +91,18 @@ Widget _buildListItem(BuildContext context, DocumentSnapshot data, Data z) {
                       border: new Border(
                           right: new BorderSide(
                               width: 1.0, color: Colors.white24))),
-                  child: Icon(Icons.autorenew, color: Colors.black),
+                  child: Icon(Icons.fiber_manual_record, color: Colors.black),
                 ),
                 title: Text(
                   one,
                   style: TextStyle(
-                      color: Color.fromRGBO(0, 14, 104, 1),
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'rob',
-                      letterSpacing: 1),
+                    fontSize: 20,
+                    color: Colors.black87,
+                    fontWeight: FontWeight.w500,
+                    fontFamily: 'OpenSans',
+                  ),
                 ),
-                // subtitle: Text("Intermediate", style: TextStyle(color: Colors.white)),
-
-                // subtitle: Row(
-                //   // children: <Widget>[
-                //   //   Text(record.details,
-                //   //       style: TextStyle(
-                //   //           fontFamily: 'rob',
-                //   //           letterSpacing: 1,
-                //   //           color: Color.fromRGBO(0, 14, 104, 1)))
-                //   // ],
-                // ),
+                subtitle: Text("This should be edited at later moment, rather about Foodtype must be provided in the database"),
                 trailing: IconButton(
                   icon: Icon(Icons.arrow_forward_ios, color: Colors.black),
                   onPressed: () {

@@ -1,10 +1,6 @@
-//import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:veli/payment.dart';
-
-///import 'package:shared_preferences/shared_preferences.dart';
-import 'login_page.dart';
 import 'package:splashscreen/splashscreen.dart';
+import 'login_page.dart';
 
 void main() => runApp(new MediaQuery(
     data: new MediaQueryData(),
