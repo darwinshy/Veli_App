@@ -27,7 +27,7 @@ class CartItemWidget extends StatelessWidget {
         margin: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
         child: ListTile(
           leading: CircleAvatar(
-            child: Text(price.toString(), style: TextStyle(fontSize: 10)),
+            child: Text('₹ '+price.toString(), style: TextStyle(fontSize: 8)),
           ),
           title: Text(title),
           subtitle: Text(

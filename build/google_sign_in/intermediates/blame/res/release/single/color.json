@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\google_sign_in\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\60fadf800b92561d746eee9657cc6193\\jetified-play-services-base-16.0.1\\res\\color\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\google_sign_in\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_tint.xml",
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\60fadf800b92561d746eee9657cc6193\\jetified-play-services-base-16.0.1\\res\\color\\common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\google_sign_in\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\60fadf800b92561d746eee9657cc6193\\jetified-play-services-base-16.0.1\\res\\color\\common_google_signin_btn_text_dark.xml"
+    }
+]

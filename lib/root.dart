@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:veli/authentication/auth.dart';
 import 'package:veli/login_page.dart';
-import 'model/cart.dart';
 import 'screens/find_restro.dart';
 
 class RootPage extends StatefulWidget {
@@ -18,6 +17,7 @@ enum AuthStatus { notSignedIn, signedIn }
 
 class _RootPageState extends State<RootPage> {
   AuthStatus signStatus = AuthStatus.notSignedIn;
+
   @override
   void initState() {
     widget.auth.currentUser().then((userId) {
@@ -50,6 +50,8 @@ class _RootPageState extends State<RootPage> {
       case AuthStatus.signedIn:
         return FindRestroScreen(auth: widget.auth, onSignedOut: _signedOut);
         break;
+      default:
+        return FindRestroScreen(auth: widget.auth, onSignedOut: _signedOut);
     }
   }
 }

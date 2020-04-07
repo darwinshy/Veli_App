@@ -1,6 +1,8 @@
 // import 'find_restro.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:getflutter/getflutter.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import './authentication/auth.dart';
 
 class LoginPage extends StatefulWidget {
@@ -33,21 +35,28 @@ class _LoginPageState extends State<LoginPage> {
 
   void validatAndSubmit() async {
     if (validateAndSave()) {
+      String userId;
       try {
         if (_formType == FormType.login) {
-          String userId =
+          userId =
               await widget.auth.signInWithEmailAndPassword(_email, _password);
         }
         if (_formType == FormType.register) {
-          String userId = await widget.auth
+          userId = await widget.auth
               .createUserWithEmailAndPassword(_email, _password);
         }
+        // addStringToSF(userId);
+        print(userId);
         widget.onSignedIn();
-      } catch (e) {
-        print(e);
-      }
+      } catch (e) {}
     }
   }
+
+  // addStringToSF(String id) async {
+  //   SharedPreferences prefs = await SharedPreferences.getInstance();
+  //   prefs.setString('userId', id);
+  //   print("Successfully Saved " + id);
+  // }
 
   void moveToRegister() {
     formKey.currentState.reset();
@@ -201,17 +210,17 @@ class _LoginPageState extends State<LoginPage> {
 //       SignInButton(
 //         Buttons.Google,
 //         onPressed: () async {
-//           signInWithGoogle().whenComplete(() {
-//             Navigator.of(context).pushReplacement(
-//               MaterialPageRoute(
-//                 builder: (context) {
-//                   return FindRestroScreen(); //DemoScreen can be user profile also
-//                 },
-//               ),
-//             );
-//           });
-//         },
-//       ),
+// signInWithGoogle().whenComplete(() {
+//   Navigator.of(context).pushReplacement(
+//     MaterialPageRoute(
+//       builder: (context) {
+//         return FindRestroScreen(); //DemoScreen can be user profile also
+//       },
+//     ),
+//   );
+//     // });
+//   },
+// ),
 //       SizedBox(
 //         height: 5,
 //       ),
@@ -220,11 +229,11 @@ class _LoginPageState extends State<LoginPage> {
 //         onPressed: () async {
 //           signInWithGoogle().whenComplete(() {
 //             Navigator.of(context).pushReplacement(
-              // MaterialPageRoute(
-              //   builder: (context) {
-              //     return FindRestroScreen(); //DemoScreen can be user profile also
-              //   },
-              // ),
+// MaterialPageRoute(
+//   builder: (context) {
+//     return FindRestroScreen(); //DemoScreen can be user profile also
+//   },
+// ),
 //             );
 //           });
 //         },

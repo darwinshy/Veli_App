@@ -33,10 +33,10 @@ class CartScreen extends StatelessWidget {
                   Chip(
                       backgroundColor: Theme.of(context).primaryColor,
                       label: Text(
-                        '\$ ' + cartItem.totalAmount.toString(),
+                        '₹ ' + cartItem.totalAmount.toString(),
                         style: TextStyle(color: Colors.white),
                       )),
-                  FlatButton(onPressed: () {}, child: Text("Order Now"))
+                  FlatButton(onPressed: () {}, child: Text("Place Order"))
                 ],
               ),
             ),

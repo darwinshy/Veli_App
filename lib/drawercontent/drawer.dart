@@ -12,9 +12,9 @@ class DrawerScreen extends StatelessWidget {
         Container(
           height: 120,
           width: double.infinity,
-          padding: EdgeInsets.only(top: 25, left: 10),
+          padding: EdgeInsets.only(top: 25, left: 15),
           alignment: Alignment.centerLeft,
-          child: Text("User Profile",
+          child: Text("Profile",
               style: TextStyle(
                   fontWeight: FontWeight.w600,
                   fontSize: 20,
@@ -25,7 +25,15 @@ class DrawerScreen extends StatelessWidget {
           leading: Icon(Icons.exit_to_app),
           title: Text("Log Out"),
           onTap: () {
-            authenticationItems.signOut();
+            authenticationItems.signOut().whenComplete(() {
+              Navigator.of(context).pushReplacement(
+                MaterialPageRoute(
+                  builder: (context) {
+                    return RootPage(Auth());
+                  },
+                ),
+              );
+            });
           },
         )
       ],
