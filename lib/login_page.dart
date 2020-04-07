@@ -1,15 +1,68 @@
-import 'find_restro.dart';
-import 'sign_in.dart';
+// import 'find_restro.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:getflutter/getflutter.dart';
+import './authentication/auth.dart';
 
 class LoginPage extends StatefulWidget {
+  final BaseAuth auth;
+  LoginPage({this.auth, this.onSignedIn});
+  final VoidCallback onSignedIn;
+
   @override
   _LoginPageState createState() => _LoginPageState();
 }
 
+enum FormType { login, register }
+
 class _LoginPageState extends State<LoginPage> {
+  final formKey = new GlobalKey<FormState>();
+
+  String _email;
+  String _password;
+  FormType _formType = FormType.login;
+
+  bool validateAndSave() {
+    final form = formKey.currentState;
+    if (form.validate()) {
+      form.save();
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  void validatAndSubmit() async {
+    if (validateAndSave()) {
+      try {
+        if (_formType == FormType.login) {
+          String userId =
+              await widget.auth.signInWithEmailAndPassword(_email, _password);
+        }
+        if (_formType == FormType.register) {
+          String userId = await widget.auth
+              .createUserWithEmailAndPassword(_email, _password);
+        }
+        widget.onSignedIn();
+      } catch (e) {
+        print(e);
+      }
+    }
+  }
+
+  void moveToRegister() {
+    formKey.currentState.reset();
+    setState(() {
+      _formType = FormType.register;
+    });
+  }
+
+  void moveToLogin() {
+    formKey.currentState.reset();
+    setState(() {
+      _formType = FormType.login;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,112 +76,157 @@ class _LoginPageState extends State<LoginPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                'Login.',
+                _formType == FormType.login ? 'Login.' : 'Register',
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 80.0,
+                    fontSize: 60.0,
                     fontFamily: "QuickSand",
                     color: Colors.black87),
               ),
-
               Padding(
                 padding: const EdgeInsets.only(top: 100),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text(
-                      "Username",
-                      style: TextStyle(fontFamily: "QuickSand"),
-                    ),
-                    TextField(
-                        // onChanged: (val) {
-                        //   titleInput = val;
-                        // },
-                        // controller: _titleController,
-                        // decoration: InputDecoration(labelText: "Enter Username"),
-
-                        // autofocus: true,
-                        ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Text(
-                      "Password",
-                      style: TextStyle(fontFamily: "QuickSand"),
-                    ),
-                    TextField(
-                      // onChanged: (val) {
-                      //   amountInput = double.parse(val);
-                      // },
-                      keyboardType: TextInputType.visiblePassword,
-                      // controller: _amountController,
-                      // decoration: InputDecoration(labelText: "Enter Password"),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    GFButton(
-                      fullWidthButton: true,
-                      size: GFSize.LARGE,
-                      color: Colors.black,
-                      onPressed: () {},
-                      text: "Login",
-                      shape: GFButtonShape.square,
-                    ),
-                    GFButton(
-                      fullWidthButton: true,
-                      size: GFSize.LARGE,
-                      color: Colors.black,
-                      onPressed: () {},
-                      text: "Register Now",
-                      shape: GFButtonShape.square,
-                    ),
-                  ],
+                child: Form(
+                  key: formKey,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      ...buildInputs(),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      ...buildSubmitButtons(),
+                      SizedBox(
+                        height: 20,
+                      ),
+                    ],
+                  ),
                 ),
               )
-              // Column(
-              //     mainAxisAlignment: MainAxisAlignment.center,
-              //     children: <Widget>[
-              //       SignInButton(
-              //         Buttons.Google,
-              //         onPressed: () async {
-              //           signInWithGoogle().whenComplete(() {
-              //             Navigator.of(context).pushReplacement(
-              //               MaterialPageRoute(
-              //                 builder: (context) {
-              //                   return FindRestroScreen(); //DemoScreen can be user profile also
-              //                 },
-              //               ),
-              //             );
-              //           });
-              //         },
-              //       ),
-              //       SizedBox(
-              //         height: 5,
-              //       ),
-              //       SignInButton(
-              //         Buttons.Facebook,
-              //         onPressed: () async {
-              //           signInWithGoogle().whenComplete(() {
-              //             Navigator.of(context).pushReplacement(
-              //               MaterialPageRoute(
-              //                 builder: (context) {
-              //                   return FindRestroScreen(); //DemoScreen can be user profile also
-              //                 },
-              //               ),
-              //             );
-              //           });
-              //         },
-              //       ),
-              //     ])
             ],
           ),
         ),
       ),
     );
   }
+
+  List<Widget> buildInputs() {
+    return [
+      Text(
+        "Email",
+        style: TextStyle(fontFamily: "QuickSand"),
+      ),
+      TextFormField(
+        validator: (value) => value.isEmpty ? "Email cannot be empty." : null,
+        keyboardType: TextInputType.emailAddress,
+        onSaved: (value) => _email = value,
+      ),
+      SizedBox(
+        height: 20,
+      ),
+      Text(
+        "Password",
+        style: TextStyle(fontFamily: "QuickSand"),
+      ),
+      TextFormField(
+        validator: (value) =>
+            value.isEmpty ? "Password cannot be empty." : null,
+        keyboardType: TextInputType.visiblePassword,
+        obscureText: true,
+        onSaved: (value) => _password = value,
+      )
+    ];
+  }
+
+  List<Widget> buildSubmitButtons() {
+    if (_formType == FormType.login) {
+      return [
+        GFButton(
+          fullWidthButton: true,
+          size: GFSize.LARGE,
+          color: Colors.black,
+          onPressed: validatAndSubmit,
+          text: "Login",
+          shape: GFButtonShape.square,
+        ),
+        SizedBox(
+          height: 30,
+        ),
+        Center(child: Text("Don't have a account ?")),
+        SizedBox(
+          height: 10,
+        ),
+        GFButton(
+          fullWidthButton: true,
+          size: GFSize.LARGE,
+          color: Colors.black,
+          onPressed: moveToRegister,
+          text: "Register Now",
+          shape: GFButtonShape.square,
+        ),
+      ];
+    } else {
+      return [
+        GFButton(
+          fullWidthButton: true,
+          size: GFSize.LARGE,
+          color: Colors.black,
+          onPressed: validatAndSubmit,
+          text: "Register",
+          shape: GFButtonShape.square,
+        ),
+        SizedBox(
+          height: 30,
+        ),
+        Center(child: Text("Already have a account ?")),
+        SizedBox(
+          height: 10,
+        ),
+        GFButton(
+          fullWidthButton: true,
+          size: GFSize.LARGE,
+          color: Colors.black,
+          onPressed: moveToLogin,
+          text: "Login Here ",
+          shape: GFButtonShape.square,
+        )
+      ];
+    }
+  }
 }
+
+// Column(
+//     mainAxisAlignment: MainAxisAlignment.center,
+//     children: <Widget>[
+//       SignInButton(
+//         Buttons.Google,
+//         onPressed: () async {
+//           signInWithGoogle().whenComplete(() {
+//             Navigator.of(context).pushReplacement(
+//               MaterialPageRoute(
+//                 builder: (context) {
+//                   return FindRestroScreen(); //DemoScreen can be user profile also
+//                 },
+//               ),
+//             );
+//           });
+//         },
+//       ),
+//       SizedBox(
+//         height: 5,
+//       ),
+//       SignInButton(
+//         Buttons.Facebook,
+//         onPressed: () async {
+//           signInWithGoogle().whenComplete(() {
+//             Navigator.of(context).pushReplacement(
+              // MaterialPageRoute(
+              //   builder: (context) {
+              //     return FindRestroScreen(); //DemoScreen can be user profile also
+              //   },
+              // ),
+//             );
+//           });
+//         },
+//       ),
+//     ])

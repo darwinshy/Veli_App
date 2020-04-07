@@ -1,13 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:splashscreen/splashscreen.dart';
-import 'login_page.dart';
+import 'package:veli/root.dart';
+import 'package:veli/screens/cartscreen.dart';
+import 'authentication/auth.dart';
+import 'model/cart.dart';
 
-void main() => runApp(new MediaQuery(
-    data: new MediaQueryData(),
-    child: new MaterialApp(
-      home: new MyApp(),
-      debugShowCheckedModeBanner: false,
-    )));
+void main() => runApp(MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (ctx) => Cart()),
+        ChangeNotifierProvider(create: (ctx) => Auth()),
+      ],
+      child: new MediaQuery(
+          data: new MediaQueryData(),
+          child: new MaterialApp(
+            home: new MyApp(),
+            debugShowCheckedModeBanner: false,
+            routes: {
+              CartScreen.routeName: (ctx) => CartScreen(),
+              RootPage.routeName: (ctx) => RootPage(Auth())
+            },
+          )),
+    ));
 
 class MyApp extends StatefulWidget {
   @override
@@ -17,9 +31,9 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return new SplashScreen(
+    return SplashScreen(
       seconds: 4,
-      navigateAfterSeconds: new LoginPage(),
+      navigateAfterSeconds: RootPage(Auth()),
       title: new Text(
         'Veli',
         style: new TextStyle(
