@@ -9,7 +9,7 @@ import 'cartscreen.dart';
 import 'find_restro.dart';
 import 'package:getflutter/getflutter.dart';
 
-final databaseReference = Firestore.instance;
+//final databaseReference = Firestore.instance;
 
 class FoodItems extends StatelessWidget {
   final Data str3;
