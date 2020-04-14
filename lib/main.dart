@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:splashscreen/splashscreen.dart';
+import 'package:veli/model/profiledata.dart';
 import 'package:veli/root.dart';
 import 'package:veli/screens/cartscreen.dart';
+import 'package:veli/screens/profile.dart';
 import 'authentication/auth.dart';
 import 'model/cart.dart';
 
@@ -10,6 +12,9 @@ void main() => runApp(MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (ctx) => Cart()),
         ChangeNotifierProvider(create: (ctx) => Auth()),
+        ChangeNotifierProvider(
+          create: (ctx) => ProfileData(),
+        )
       ],
       child: new MediaQuery(
           data: new MediaQueryData(),
@@ -18,7 +23,8 @@ void main() => runApp(MultiProvider(
             debugShowCheckedModeBanner: false,
             routes: {
               CartScreen.routeName: (ctx) => CartScreen(),
-              RootPage.routeName: (ctx) => RootPage(Auth())
+              RootPage.routeName: (ctx) => RootPage(Auth()),
+              Profile.routeName: (ctx) => Profile()
             },
           )),
     ));

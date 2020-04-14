@@ -107,6 +107,10 @@ Widget _buildListItem(BuildContext context, DocumentSnapshot data, Data z) {
           onPressed: () {
             print("Item Added");
             cart.addItem(record.id, record.cost.toDouble(), record.name);
+            Scaffold.of(context).showSnackBar(SnackBar(
+              content: Text("Item was added"),
+              duration: Duration(milliseconds: 400),
+            ));
           }),
       title: Text(
         one,

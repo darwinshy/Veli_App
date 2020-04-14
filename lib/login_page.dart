@@ -2,7 +2,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:getflutter/getflutter.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import './authentication/auth.dart';
 
 class LoginPage extends StatefulWidget {
@@ -31,6 +30,14 @@ class _LoginPageState extends State<LoginPage> {
     } else {
       return false;
     }
+  }
+
+  void loginwithgoogle() async {
+    try {
+      String userId = await widget.auth.signInWithGoogle();
+      widget.onSignedIn();
+      print(userId);
+    } catch (e) {}
   }
 
   void validatAndSubmit() async {
@@ -158,12 +165,20 @@ class _LoginPageState extends State<LoginPage> {
           text: "Login",
           shape: GFButtonShape.square,
         ),
+        GFButton(
+          fullWidthButton: true,
+          size: GFSize.LARGE,
+          color: Colors.black,
+          onPressed: loginwithgoogle,
+          text: "Login with Google",
+          shape: GFButtonShape.square,
+        ),
         SizedBox(
           height: 30,
         ),
         Center(child: Text("Don't have a account ?")),
         SizedBox(
-          height: 10,
+          height: 50,
         ),
         GFButton(
           fullWidthButton: true,
@@ -198,44 +213,8 @@ class _LoginPageState extends State<LoginPage> {
           onPressed: moveToLogin,
           text: "Login Here ",
           shape: GFButtonShape.square,
-        )
+        ),
       ];
     }
   }
 }
-
-// Column(
-//     mainAxisAlignment: MainAxisAlignment.center,
-//     children: <Widget>[
-//       SignInButton(
-//         Buttons.Google,
-//         onPressed: () async {
-// signInWithGoogle().whenComplete(() {
-//   Navigator.of(context).pushReplacement(
-//     MaterialPageRoute(
-//       builder: (context) {
-//         return FindRestroScreen(); //DemoScreen can be user profile also
-//       },
-//     ),
-//   );
-//     // });
-//   },
-// ),
-//       SizedBox(
-//         height: 5,
-//       ),
-//       SignInButton(
-//         Buttons.Facebook,
-//         onPressed: () async {
-//           signInWithGoogle().whenComplete(() {
-//             Navigator.of(context).pushReplacement(
-// MaterialPageRoute(
-//   builder: (context) {
-//     return FindRestroScreen(); //DemoScreen can be user profile also
-//   },
-// ),
-//             );
-//           });
-//         },
-//       ),
-//     ])

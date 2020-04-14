@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:veli/authentication/auth.dart';
 import 'package:veli/login_page.dart';
 import 'screens/find_restro.dart';
