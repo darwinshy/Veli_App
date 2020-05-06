@@ -8,8 +8,14 @@ class CartItemWidget extends StatelessWidget {
   final int quantity;
   final String title;
   final String productId;
+  final String url;
   CartItemWidget(
-      {this.id, this.price, this.quantity, this.title, this.productId});
+      {this.id,
+      this.price,
+      this.quantity,
+      this.title,
+      this.productId,
+      this.url});
   @override
   Widget build(BuildContext context) {
     return Dismissible(
@@ -26,14 +32,21 @@ class CartItemWidget extends StatelessWidget {
       child: Card(
         margin: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
         child: ListTile(
-          leading: CircleAvatar(
-            child: Text('₹ '+price.toString(), style: TextStyle(fontSize: 8)),
-          ),
+          contentPadding: EdgeInsets.all(10),
+          leading: CircleAvatar(child: Text('x' + quantity.toString())),
           title: Text(title),
-          subtitle: Text(
-            (price * quantity).toString(),
+          subtitle: Text(price.toString()),
+          // trailing: Text('x' + quantity.toString()),
+          trailing: Column(
+            children: <Widget>[
+              Text(url.toString()),
+              SizedBox(
+                height: 10,
+              ),
+              Text('₹ ' + (price * quantity).toString(),
+                  style: TextStyle(fontSize: 12))
+            ],
           ),
-          trailing: Text('x' + quantity.toString()),
         ),
       ),
     );

@@ -77,25 +77,18 @@ Widget _buildList(
   }
 }
 
-Widget _buildListItem(BuildContext context, DocumentSnapshot data, Data z) {
+Widget _buildListItem(BuildContext context, DocumentSnapshot data, Data item) {
   final cart = Provider.of<Cart>(context, listen: true);
-  // cart.items.forEach((f, c) => print(c.id +
-  //     ' ' +
-  //     c.price.toString() +
-  //     ' ' +
-  //     c.quantity.toString() +
-  //     ' ' +
-  //     c.title));
   final record = Record.fromSnapshot(data);
-  String one = record.name.toString();
-  String two = "  ₹" + record.cost.toString();
-  // String available = record.available.toString();
+  String itemName = record.name.toString();
+  String price = "  ₹" + record.cost.toString();
+
   String type = record.vgvng.toString();
-  // String vgpath = "asset/" + type + ".png";
 
   return GFCard(
+    color: Colors.black87,
+    elevation: 0,
     boxFit: BoxFit.cover,
-    // imageOverlay: AssetImage('asset/bgoftype.png'),
     title: GFListTile(
       avatar: CircleAvatar(
         radius: 10,
@@ -103,29 +96,34 @@ Widget _buildListItem(BuildContext context, DocumentSnapshot data, Data z) {
             type == true.toString() ? 'asset/true.png' : 'asset/false.png'),
       ),
       icon: IconButton(
-          icon: Icon(Icons.add),
+          icon: Icon(
+            Icons.add,
+            color: Colors.white,
+          ),
           onPressed: () {
-            print("Item Added");
-            cart.addItem(record.id, record.cost.toDouble(), record.name);
+            print(record.brand);
+
+            cart.addItem(record.id, record.cost.toDouble(), record.name,
+                item.nameofres, item.menutype);
             Scaffold.of(context).showSnackBar(SnackBar(
               content: Text("Item was added"),
               duration: Duration(milliseconds: 400),
             ));
           }),
       title: Text(
-        one,
+        itemName,
         style: TextStyle(
           fontSize: 20,
-          color: Colors.black87,
+          color: Colors.white,
           fontWeight: FontWeight.bold,
           fontFamily: 'rob',
         ),
       ),
       subTitle: Text(
-        "Price : " + two,
+        "Price : " + price,
         style: TextStyle(
           fontSize: 12,
-          color: Colors.black54,
+          color: Colors.white,
           fontFamily: 'rob',
         ),
       ),
@@ -139,6 +137,7 @@ class Record {
   final bool available;
   final bool vgvng;
   final String id;
+  final String brand;
   final DocumentReference reference;
 
 //Add variables/field
@@ -147,7 +146,8 @@ class Record {
         cost = map['cost'],
         available = map['available'],
         vgvng = map['type'],
-        id = map['id'];
+        id = map['id'],
+        brand = map['brand'];
 
   Record.fromSnapshot(DocumentSnapshot snapshot)
       : this.fromMap(snapshot.data, reference: snapshot.reference);

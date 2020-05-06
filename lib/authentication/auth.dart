@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -35,6 +36,23 @@ class Auth extends BaseAuth with ChangeNotifier {
 
     final AuthResult authResult = await _auth.signInWithCredential(credential);
     final FirebaseUser user = authResult.user;
+    final snapShot =
+        await Firestore.instance.collection('users').document(user.uid).get();
+    if (!snapShot.exists) {
+      Firestore.instance.collection("users").document(user.uid).setData({
+        "uid": user.uid,
+        "name": user.displayName,
+        "email": user.email,
+        "phone": user.phoneNumber,
+        "address": null,
+        "orders": null
+      });
+    } else {
+      print("User Exists");
+    }
+
+    notifyListeners();
+
     return user.uid;
   }
 
@@ -43,16 +61,34 @@ class Auth extends BaseAuth with ChangeNotifier {
     AuthResult authResult = await FirebaseAuth.instance
         .createUserWithEmailAndPassword(email: email, password: password);
     FirebaseUser user = authResult.user;
+    final snapShot =
+        await Firestore.instance.collection('users').document(user.uid).get();
+    if (!snapShot.exists) {
+      Firestore.instance.collection("users").document(user.uid).setData({
+        "uid": user.uid,
+        "name": user.displayName,
+        "email": user.email,
+        "phone": user.phoneNumber,
+        "address": null,
+        "orders": null
+      });
+    } else {
+      print("User Exists");
+    }
     notifyListeners();
 
     return user.uid;
   }
 
   Future<String> currentUser() async {
-    FirebaseUser user = await FirebaseAuth.instance.currentUser();
-    notifyListeners();
+    try {
+      FirebaseUser user = await FirebaseAuth.instance.currentUser();
+      notifyListeners();
 
-    return user.uid;
+      return user.uid;
+    } catch (e) {
+      return null;
+    }
   }
 
   Future<String> getEmail() async {
@@ -78,6 +114,10 @@ class Auth extends BaseAuth with ChangeNotifier {
 
   Future<void> signOut() {
     notifyListeners();
-    return FirebaseAuth.instance.signOut();
+    try {
+      return FirebaseAuth.instance.signOut();
+    } catch (e) {
+      return null;
+    }
   }
 }

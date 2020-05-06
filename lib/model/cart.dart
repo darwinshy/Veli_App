@@ -5,21 +5,21 @@ class CartItem {
   final String title;
   final int quantity;
   final double price;
-
-  CartItem({this.id, this.title, this.quantity, this.price});
+  final String brand;
+  final String menuType;
+  CartItem(
+      {this.id,
+      this.title,
+      this.quantity,
+      this.price,
+      this.brand,
+      this.menuType});
 }
 
 class Cart with ChangeNotifier {
   Map<String, CartItem> _items = {};
 
   Map<String, CartItem> get items {
-    // _items.forEach((f, c) => print(c.id +
-    //     ' ' +
-    //     c.price.toString() +
-    //     ' ' +
-    //     c.quantity.toString() +
-    //     ' ' +
-    //     c.title));
     print("Items was Accessed");
     return {..._items};
   }
@@ -30,12 +30,12 @@ class Cart with ChangeNotifier {
 
   double get totalAmount {
     double total = 0.0;
-    _items.forEach(
-        (f, cartItem) => total = total + cartItem.price * cartItem.quantity);
+    _items.forEach((f, cartItem) => total = total + cartItem.price);
     return total;
   }
 
-  void addItem(String pId, double price, String title) {
+  void addItem(
+      String pId, double price, String title, String brand, String menuType) {
     if (_items.containsKey(pId)) {
       _items.update(
           pId,
@@ -43,7 +43,9 @@ class Cart with ChangeNotifier {
               id: existing.id,
               price: existing.price * existing.quantity,
               quantity: existing.quantity + 1,
-              title: existing.title));
+              title: existing.title,
+              brand: existing.brand,
+              menuType: existing.menuType));
     } else {
       _items.putIfAbsent(
           pId,
@@ -51,7 +53,9 @@ class Cart with ChangeNotifier {
               id: UniqueKey().toString(),
               title: title,
               price: price,
-              quantity: 1));
+              quantity: 1,
+              brand: brand,
+              menuType: menuType));
     }
     notifyListeners();
   }

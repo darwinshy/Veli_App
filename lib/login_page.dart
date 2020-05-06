@@ -49,8 +49,10 @@ class _LoginPageState extends State<LoginPage> {
               await widget.auth.signInWithEmailAndPassword(_email, _password);
         }
         if (_formType == FormType.register) {
-          userId = await widget.auth
-              .createUserWithEmailAndPassword(_email, _password);
+          userId = await widget.auth.createUserWithEmailAndPassword(
+            _email,
+            _password,
+          );
         }
         // addStringToSF(userId);
         print(userId);
