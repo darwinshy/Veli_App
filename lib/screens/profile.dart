@@ -29,16 +29,28 @@ class _ProfileState extends State<Profile> {
 
   void saveChangesToDatabase() {
     final form = formKey.currentState;
+
     if (form.validate() && uid != null) {
-      print(uid);
       form.save();
-      Firestore.instance
-          .collection("users")
-          .document(uid)
-          .updateData({"name": name, "phone": phone, "address": address});
-      setState(() {
-        editingMode = false;
-      });
+      if (name == null) {
+        Firestore.instance
+            .collection("users")
+            .document(uid)
+            .updateData({"phone": phone, "address": address});
+
+        setState(() {
+          editingMode = false;
+        });
+      } else {
+        Firestore.instance
+            .collection("users")
+            .document(uid)
+            .updateData({"name": name, "phone": phone, "address": address});
+
+        setState(() {
+          editingMode = false;
+        });
+      }
     }
   }
 

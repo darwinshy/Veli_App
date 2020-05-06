@@ -33,10 +33,15 @@ class CartItemWidget extends StatelessWidget {
         margin: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
         child: ListTile(
           contentPadding: EdgeInsets.all(10),
-          leading: CircleAvatar(child: Text('x' + quantity.toString())),
+          leading: CircleAvatar(
+            child: Text(
+              'x' + quantity.toString(),
+              style: TextStyle(color: Colors.white),
+            ),
+            backgroundColor: Colors.black,
+          ),
           title: Text(title),
           subtitle: Text(price.toString()),
-          // trailing: Text('x' + quantity.toString()),
           trailing: Column(
             children: <Widget>[
               Text(url.toString()),

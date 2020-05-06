@@ -86,7 +86,6 @@ Widget _buildListItem(BuildContext context, DocumentSnapshot data, Data item) {
   String type = record.vgvng.toString();
 
   return GFCard(
-    color: Colors.black87,
     elevation: 0,
     boxFit: BoxFit.cover,
     title: GFListTile(
@@ -98,7 +97,6 @@ Widget _buildListItem(BuildContext context, DocumentSnapshot data, Data item) {
       icon: IconButton(
           icon: Icon(
             Icons.add,
-            color: Colors.white,
           ),
           onPressed: () {
             print(record.brand);
@@ -114,7 +112,6 @@ Widget _buildListItem(BuildContext context, DocumentSnapshot data, Data item) {
         itemName,
         style: TextStyle(
           fontSize: 20,
-          color: Colors.white,
           fontWeight: FontWeight.bold,
           fontFamily: 'rob',
         ),
@@ -123,7 +120,6 @@ Widget _buildListItem(BuildContext context, DocumentSnapshot data, Data item) {
         "Price : " + price,
         style: TextStyle(
           fontSize: 12,
-          color: Colors.white,
           fontFamily: 'rob',
         ),
       ),

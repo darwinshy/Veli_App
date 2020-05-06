@@ -28,7 +28,13 @@ class _PaymentPageState extends State<PaymentPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('UPI'),
+        iconTheme: IconThemeData(color: Colors.black),
+        backgroundColor: Colors.white10,
+        elevation: 0,
+        title: Text(
+          'Payment',
+          style: TextStyle(color: Colors.black),
+        ),
       ),
       body: Column(
         children: <Widget>[
@@ -36,27 +42,28 @@ class _PaymentPageState extends State<PaymentPage> {
             flex: 1,
             child: Container(
               alignment: Alignment.center,
-              child: Column(
-                children: <Widget>[
+              child: Column(children: <Widget>[
                 RaisedButton(
                   child: Text('PhonePe'),
                   onPressed: () {
                     _transaction = initiateTransaction(UpiIndiaApps.PhonePe);
                     setState(() {});
-                  },),
+                  },
+                ),
                 RaisedButton(
-                  child: Text('GPay'),
-                  onPressed: () {
-                    _transaction = initiateTransaction(UpiIndiaApps.GooglePay);
-                    setState(() {});
-                  }),
-                  RaisedButton(
-                  child: Text('PayTM'),
-                  onPressed: () {
-                    _transaction = initiateTransaction(UpiIndiaApps.PayTM);
-                    setState(() {});
-                  }),
-                ]),
+                    child: Text('GPay'),
+                    onPressed: () {
+                      _transaction =
+                          initiateTransaction(UpiIndiaApps.GooglePay);
+                      setState(() {});
+                    }),
+                RaisedButton(
+                    child: Text('PayTM'),
+                    onPressed: () {
+                      _transaction = initiateTransaction(UpiIndiaApps.PayTM);
+                      setState(() {});
+                    }),
+              ]),
             ),
           ),
           Expanded(
