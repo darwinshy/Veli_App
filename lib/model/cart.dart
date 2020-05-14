@@ -20,17 +20,20 @@ class Cart with ChangeNotifier {
   Map<String, CartItem> _items = {};
 
   Map<String, CartItem> get items {
-    print("Items was Accessed");
+    notifyListeners();
     return {..._items};
   }
 
-  int get itemCount {
+  int itemCount() {
+    notifyListeners();
     return _items == null ? 0 : _items.length;
   }
 
-  double get totalAmount {
+  double totalAmount() {
     double total = 0.0;
-    _items.forEach((f, cartItem) => total = total + cartItem.price);
+    _items.forEach(
+        (f, cartItem) => total = total + cartItem.price * cartItem.quantity);
+    notifyListeners();
     return total;
   }
 
@@ -50,7 +53,7 @@ class Cart with ChangeNotifier {
       _items.putIfAbsent(
           pId,
           () => CartItem(
-              id: UniqueKey().toString(),
+              id: pId,
               title: title,
               price: price,
               quantity: 1,
@@ -62,6 +65,11 @@ class Cart with ChangeNotifier {
 
   void removeItem(String id) {
     _items.remove(id);
+    notifyListeners();
+  }
+
+  void removeAll() {
+    _items = {};
     notifyListeners();
   }
 }

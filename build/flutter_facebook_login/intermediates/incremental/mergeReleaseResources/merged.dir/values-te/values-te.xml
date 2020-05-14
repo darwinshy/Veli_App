@@ -51,5 +51,5 @@
     <string gender="unknown" name="com_facebook_smart_login_confirmation_title">లాగిన్‌ను నిర్ధారించండి</string>
     <string gender="unknown" name="com_facebook_tooltip_default">మీరు నియంత్రణలో ఉన్నారు - మీరు ఏ సమాచారాన్ని అనువర్తనాలతో పంచుకోవాలనుకుంటున్నారో ఎంచుకోండి.</string>
     <string msgid="146198913615257606" name="search_menu_title">"వెతుకు"</string>
-    <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

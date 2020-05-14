@@ -32,5 +32,5 @@
     <string gender="unknown" name="com_facebook_loading">Loading…</string>
     <string gender="unknown" name="com_facebook_tooltip_default">You\'re in control – choose what information you want to share with apps.</string>
     <string msgid="146198913615257606" name="search_menu_title">"Search"</string>
-    <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

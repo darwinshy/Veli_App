@@ -50,5 +50,5 @@
     <string gender="unknown" name="com_facebook_smart_login_confirmation_title">I-confirm ang Pag-log in</string>
     <string gender="unknown" name="com_facebook_tooltip_default">Ikaw ang may kontrol - piliin anong impormasyon ang gusto mong i-share sa mga app.</string>
     <string msgid="146198913615257606" name="search_menu_title">"Maghanap"</string>
-    <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

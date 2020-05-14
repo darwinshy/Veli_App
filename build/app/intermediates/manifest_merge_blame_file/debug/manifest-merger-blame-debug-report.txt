@@ -38,7 +38,7 @@
 27        android:name="io.flutter.app.FlutterApplication"
 27-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:9:9-57
 28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-28-->[androidx.core:core:1.0.0] C:\Users\shashwat\.gradle\caches\transforms-2\files-2.1\ce530c5b50dc774f16b6e9179ea6d25d\core-1.0.0\AndroidManifest.xml:22:18-86
+28-->[androidx.core:core:1.1.0] C:\Users\shashwat\.gradle\caches\transforms-2\files-2.1\0a88e15c27fe8f45486868f55d363bed\core-1.1.0\AndroidManifest.xml:24:18-86
 29        android:debuggable="true"
 30        android:icon="@mipmap/ic_launcher"
 30-->C:\Users\shashwat\Documents\GitHub\Veli_App\android\app\src\main\AndroidManifest.xml:11:9-43

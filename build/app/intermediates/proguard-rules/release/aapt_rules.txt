@@ -2,37 +2,37 @@
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
 # Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:29
 -keep class com.example.veli.MainActivity { <init>(); }
-# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:150
+# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:156
 -keep class com.facebook.CurrentAccessTokenExpirationBroadcastReceiver { <init>(); }
 # Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:53
 -keep class com.facebook.CustomTabActivity { <init>(); }
-# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:135
+# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:141
 -keep class com.facebook.CustomTabMainActivity { <init>(); }
 # Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:48
 -keep class com.facebook.FacebookActivity { <init>(); }
-# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:145
+# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:151
 -keep class com.facebook.internal.FacebookInitProvider { <init>(); }
-# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:167
+# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:173
 -keep class com.google.android.gms.auth.api.signin.RevocationBoundService { <init>(); }
-# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:158
+# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:164
 -keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity { <init>(); }
-# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:195
+# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:201
 -keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
-# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:115
+# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:121
 -keep class com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver { <init>(); }
-# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:129
+# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:135
 -keep class com.google.android.gms.measurement.AppMeasurementJobService { <init>(); }
-# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:110
+# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:116
 -keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
-# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:125
+# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:131
 -keep class com.google.android.gms.measurement.AppMeasurementService { <init>(); }
-# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:172
+# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:178
 -keep class com.google.firebase.auth.internal.FederatedSignInActivity { <init>(); }
 # Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:83
 -keep class com.google.firebase.components.ComponentDiscoveryService { <init>(); }
-# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:180
+# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:186
 -keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(); }
-# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:189
+# Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:195
 -keep class com.google.firebase.provider.FirebaseInitProvider { <init>(); }
 # Referenced at C:\Users\shashwat\Documents\GitHub\Veli_App\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:23
 -keep class io.flutter.app.FlutterApplication { <init>(); }

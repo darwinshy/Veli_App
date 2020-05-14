@@ -21,7 +21,6 @@ class _ProfileState extends State<Profile> {
   final formKey = new GlobalKey<FormState>();
 
   void editingModeChange() {
-    print("Call");
     setState(() {
       editingMode = true;
     });
@@ -67,13 +66,16 @@ class _ProfileState extends State<Profile> {
               iconTheme: IconThemeData(color: Colors.black),
               backgroundColor: Colors.white10,
               elevation: 0,
-              title: Text("Profile"),
+              title: Text(
+                "Profile",
+                style: TextStyle(color: Colors.black),
+              ),
             ),
             body: _buildBody(context, snapshot, editingMode, editingModeChange,
                 saveChangesToDatabase, formKey),
           );
         } else {
-          return CircularProgressIndicator();
+          return Scaffold(body: Center(child: CircularProgressIndicator()));
         }
       },
     );

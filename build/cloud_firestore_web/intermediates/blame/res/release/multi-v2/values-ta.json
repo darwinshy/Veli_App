@@ -4,6 +4,23 @@
             "outputFile": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\cloud_firestore_web\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-ta\\values-ta.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\values-ta\\values-ta.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "330",
+                        "endColumns": "100",
+                        "endOffsets": "426"
+                    }
+                },
+                {
                     "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\c90493df71655efdb43557beaaaaa3aa\\jetified-play-services-basement-16.0.1\\res\\values-ta\\values.xml",
                     "from": {
                         "startLines": "4",
@@ -18,23 +35,6 @@
                         "startOffsets": "105",
                         "endColumns": "224",
                         "endOffsets": "325"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\values-ta\\values-ta.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "330",
-                        "endColumns": "100",
-                        "endOffsets": "426"
                     }
                 }
             ]
@@ -43,6 +43,23 @@
             "outputFile": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\cloud_firestore_web\\intermediates\\res\\merged\\release\\values-ta\\values-ta.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\values-ta\\values-ta.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "330",
+                        "endColumns": "100",
+                        "endOffsets": "426"
+                    }
+                },
+                {
                     "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\c90493df71655efdb43557beaaaaa3aa\\jetified-play-services-basement-16.0.1\\res\\values-ta\\values.xml",
                     "from": {
                         "startLines": "4",
@@ -57,23 +74,6 @@
                         "startOffsets": "105",
                         "endColumns": "224",
                         "endOffsets": "325"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\values-ta\\values-ta.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "330",
-                        "endColumns": "100",
-                        "endOffsets": "426"
                     }
                 }
             ]

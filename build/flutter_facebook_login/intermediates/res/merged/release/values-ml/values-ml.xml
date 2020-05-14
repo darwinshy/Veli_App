@@ -51,5 +51,5 @@
     <string gender="unknown" name="com_facebook_smart_login_confirmation_title">ലോഗിൻ സ്ഥിരീകരിക്കുക</string>
     <string gender="unknown" name="com_facebook_tooltip_default">നിങ്ങൾ നിയന്ത്രണത്തിലാണ് - ആപ്പുകൾ ഉപയോഗിച്ച് നിങ്ങൾക്ക് എന്ത് വിവരമാണ് പങ്കിടേണ്ടതെന്ന് തിരഞ്ഞെടുക്കുക.</string>
     <string msgid="146198913615257606" name="search_menu_title">"തിരയുക"</string>
-    <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

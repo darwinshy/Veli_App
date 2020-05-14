@@ -245,11 +245,11 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\layout-v21_notification_action.xml.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\layout-v21\\notification_action.xml"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\layout-v21\\notification_action.xml"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable_notification_icon_background.xml.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\drawable\\notification_icon_background.xml"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\drawable\\notification_icon_background.xml"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\color-v23_abc_color_highlight_material.xml.flat",
@@ -297,7 +297,7 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable_notification_tile_bg.xml.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\drawable\\notification_tile_bg.xml"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\drawable\\notification_tile_bg.xml"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
@@ -465,7 +465,7 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable_common_google_signin_btn_icon_light_focused.xml.flat",
@@ -569,11 +569,11 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\layout_notification_template_part_time.xml.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\layout\\notification_template_part_time.xml"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\layout\\notification_template_part_time.xml"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_messenger_bubble_small_white.png.flat",
@@ -729,7 +729,7 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\layout_notification_action.xml.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\layout\\notification_action.xml"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\layout\\notification_action.xml"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\mipmap-xxhdpi_ic_launcher.png.flat",
@@ -757,7 +757,7 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_com_facebook_tooltip_blue_xout.png.flat",
@@ -841,7 +841,7 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\layout-v16_notification_template_custom_big.xml.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\layout-v16\\notification_template_custom_big.xml"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\layout-v16\\notification_template_custom_big.xml"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -885,11 +885,11 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\layout-v21_notification_template_custom_big.xml.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\layout-v21\\notification_template_custom_big.xml"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\layout-v21\\notification_template_custom_big.xml"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable_abc_ic_voice_search_api_material.xml.flat",
@@ -949,7 +949,7 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\layout_notification_template_part_chronometer.xml.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\layout\\notification_template_part_chronometer.xml"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_googleg_standard_color_18.png.flat",
@@ -961,7 +961,7 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\layout_messenger_button_send_white_round.xml.flat",
@@ -973,7 +973,7 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-watch-v20_common_google_signin_btn_text_dark_normal.xml.flat",
@@ -1017,7 +1017,7 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-v21_notification_action_background.xml.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\drawable-v21\\notification_action_background.xml"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\drawable-v21\\notification_action_background.xml"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
@@ -1065,7 +1065,7 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
@@ -1105,7 +1105,7 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\layout-v21_notification_action_tombstone.xml.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\layout-v21\\notification_action_tombstone.xml"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\layout-v21\\notification_action_tombstone.xml"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -1169,7 +1169,7 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable_messenger_button_white_bg_round.xml.flat",
@@ -1177,7 +1177,7 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-ldrtl-mdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -1325,7 +1325,7 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -1365,7 +1365,7 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\layout_notification_template_icon_group.xml.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\layout\\notification_template_icon_group.xml"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\layout\\notification_template_icon_group.xml"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
@@ -1477,7 +1477,7 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\layout-v21_notification_template_icon_group.xml.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\layout-v21\\notification_template_icon_group.xml"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\layout-v21\\notification_template_icon_group.xml"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-ldrtl-xxxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -1513,7 +1513,7 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -1613,7 +1613,7 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\layout_notification_action_tombstone.xml.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\layout\\notification_action_tombstone.xml"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\layout\\notification_action_tombstone.xml"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\layout-v26_abc_screen_toolbar.xml.flat",
@@ -1685,11 +1685,11 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable_notification_bg.xml.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\drawable\\notification_bg.xml"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\drawable\\notification_bg.xml"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
@@ -1709,7 +1709,7 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
@@ -1722,6 +1722,10 @@
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\cbb8a47c42fb38f1e6876b7e5eba7aca\\appcompat-1.0.0\\res\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\layout_custom_dialog.xml.flat",
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\layout\\custom_dialog.xml"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -1765,7 +1769,7 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -1897,7 +1901,7 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable_notification_bg_low.xml.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\drawable\\notification_bg_low.xml"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\drawable\\notification_bg_low.xml"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
@@ -2033,7 +2037,7 @@
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\ce530c5b50dc774f16b6e9179ea6d25d\\core-1.0.0\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
+        "source": "C:\\Users\\shashwat\\.gradle\\caches\\transforms-2\\files-2.1\\0a88e15c27fe8f45486868f55d363bed\\core-1.1.0\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\shashwat\\Documents\\GitHub\\Veli_App\\build\\app\\intermediates\\res\\merged\\release\\color_abc_hint_foreground_material_dark.xml.flat",

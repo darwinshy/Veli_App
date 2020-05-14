@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import 'package:veli/model/cart.dart';
 import 'package:veli/widgets/badge.dart';
@@ -7,10 +8,11 @@ import '../drawercontent/drawer.dart';
 import './find_restro.dart';
 import './food_item_view.dart';
 import 'cartscreen.dart';
+import 'currentOrdersSummary.dart';
 
 final databaseReference = Firestore.instance;
 
-class FoodItemMenuType extends StatelessWidget {
+class FoodItemMenuType extends StatefulWidget {
   static const routename = '/FoodItemMenuType';
   final Data str2;
 
@@ -19,16 +21,42 @@ class FoodItemMenuType extends StatelessWidget {
   });
 
   @override
+  _FoodItemMenuTypeState createState() => _FoodItemMenuTypeState();
+}
+
+class _FoodItemMenuTypeState extends State<FoodItemMenuType> {
+  void refresh() {
+    setState(() {});
+  }
+
+  @override
   Widget build(BuildContext context) {
+    refresh();
     return Scaffold(
       drawer: Drawer(child: DrawerScreen()),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: FloatingActionButton.extended(
+        elevation: 0,
+        backgroundColor: Colors.black,
+        icon: Icon(Icons.fastfood),
+        isExtended: true,
+        onPressed: () {
+          Navigator.of(context).push(
+            PageTransition(
+                type: PageTransitionType.downToUp,
+                child: CurrentOrdersSummary()),
+          );
+        },
+        label: Text("      Last Order      "),
+      ),
       appBar: AppBar(
         // automaticallyImplyLeading: false,
         title: Text(
-          'Select Food Type',
+          'Menu',
           style: TextStyle(
-              color: Colors.white, fontFamily: 'rob', letterSpacing: 1),
+              color: Colors.black, fontFamily: 'rob', letterSpacing: 1),
         ),
+        iconTheme: IconThemeData(color: Colors.black),
         actions: <Widget>[
           Badge(
               child: IconButton(
@@ -36,14 +64,15 @@ class FoodItemMenuType extends StatelessWidget {
                   onPressed: () {
                     Navigator.of(context).pushNamed(CartScreen.routeName);
                   }),
-              value:
-                  Provider.of<Cart>(context, listen: true).itemCount.toString())
+              value: Provider.of<Cart>(context, listen: false)
+                  .itemCount()
+                  .toString())
         ],
         primary: true,
-        backgroundColor: Colors.black87,
+        backgroundColor: Colors.white10,
         elevation: 0,
       ),
-      body: _buildBody(context, str2),
+      body: _buildBody(context, widget.str2),
     );
   }
 }
@@ -71,7 +100,29 @@ Widget _buildList(
     );
   } else
     return Center(
-        child: Text("Sorry , the item is not available at the moment"));
+        child: Container(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Text(
+            "Snap !",
+            style: TextStyle(
+                fontFamily: 'QuickSand',
+                fontSize: 46,
+                fontWeight: FontWeight.w700),
+          ),
+          Text(
+            "Technical Error",
+            style: TextStyle(
+                fontFamily: 'QuickSand', fontSize: 26, letterSpacing: 3),
+          ),
+          Text(
+            "Please contact administator",
+            style: TextStyle(fontFamily: 'QuickSand', fontSize: 16),
+          ),
+        ],
+      ),
+    ));
 }
 
 Widget _buildListItem(BuildContext context, DocumentSnapshot data, Data z) {
@@ -85,8 +136,9 @@ Widget _buildListItem(BuildContext context, DocumentSnapshot data, Data z) {
   return InkWell(
     onTap: () {
       Navigator.of(context).push(
-        MaterialPageRoute(
-          builder: (context) => FoodItems(
+        PageTransition(
+          type: PageTransitionType.fade,
+          child: FoodItems(
             str3: str2,
           ),
         ),
@@ -98,7 +150,7 @@ Widget _buildListItem(BuildContext context, DocumentSnapshot data, Data z) {
             padding: const EdgeInsets.all(4.0),
             child: Container(
               decoration: BoxDecoration(
-                color: Color.fromRGBO(241, 241, 241, 1),
+                color: Colors.white12,
                 borderRadius: BorderRadius.circular(10.0),
                 // border: Border.all(color: Colors.black)
               ),

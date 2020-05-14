@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import 'package:veli/authentication/auth.dart';
 import 'package:veli/root.dart';
+import 'package:veli/screens/allOrders.dart';
 import 'package:veli/screens/profile.dart';
 
 class DrawerScreen extends StatelessWidget {
@@ -14,10 +16,11 @@ class DrawerScreen extends StatelessWidget {
         Container(
           height: 120,
           width: double.infinity,
-          padding: EdgeInsets.only(top: 25, left: 15),
+          padding: EdgeInsets.only(top: 25, left: 25),
           alignment: Alignment.centerLeft,
           child: Text("Veli",
               style: TextStyle(
+                  fontFamily: "sam",
                   fontWeight: FontWeight.w600,
                   fontSize: 20,
                   color: Colors.black87)),
@@ -30,6 +33,18 @@ class DrawerScreen extends StatelessWidget {
             Navigator.pushNamed(context, Profile.routeName);
           },
         ),
+        SizedBox(height: 20),
+        ListTile(
+          leading: Icon(Icons.shopping_cart),
+          title: Text("Orders"),
+          onTap: () {
+            Navigator.push(
+                context,
+                PageTransition(
+                    child: AllOrders(), type: PageTransitionType.fade));
+          },
+        ),
+        SizedBox(height: 20),
         ListTile(
           leading: Icon(Icons.exit_to_app),
           title: Text("Log Out"),
@@ -44,7 +59,7 @@ class DrawerScreen extends StatelessWidget {
               );
             });
           },
-        )
+        ),
       ],
     );
   }

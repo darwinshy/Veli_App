@@ -51,5 +51,5 @@
     <string gender="unknown" name="com_facebook_smart_login_confirmation_title">લૉગિનની પુષ્ટિ કરો</string>
     <string gender="unknown" name="com_facebook_tooltip_default">તમે નિયંત્રણમાં છો - તમે એપ્લિકેશન્સ સાથે શું માહિતી શેર કરવા માંગો પસંદ કરો.</string>
     <string msgid="146198913615257606" name="search_menu_title">"શોધો"</string>
-    <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

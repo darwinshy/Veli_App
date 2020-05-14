@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:provider/provider.dart';
 import 'package:veli/model/cart.dart';
+import 'package:veli/model/profiledata.dart';
 import 'package:veli/widgets/badge.dart';
 import '../drawercontent/drawer.dart';
 // import 'package:veli/payment.dart';
@@ -9,21 +10,32 @@ import 'cartscreen.dart';
 import 'find_restro.dart';
 import 'package:getflutter/getflutter.dart';
 
-//final databaseReference = Firestore.instance;
-
-class FoodItems extends StatelessWidget {
+class FoodItems extends StatefulWidget {
   final Data str3;
 
   FoodItems({this.str3});
+
+  @override
+  _FoodItemsState createState() => _FoodItemsState();
+}
+
+class _FoodItemsState extends State<FoodItems> {
+  void refresh() {
+    setState(() {});
+  }
+
   @override
   Widget build(BuildContext context) {
+    final cart = Provider.of<Cart>(context);
+    refresh();
     return Scaffold(
       drawer: Drawer(child: DrawerScreen()),
       appBar: AppBar(
+        iconTheme: IconThemeData(color: Colors.black),
         title: Text(
-          'Select Food Items',
+          'Items',
           style: TextStyle(
-              color: Colors.white, fontFamily: 'rob', letterSpacing: 1),
+              color: Colors.black, fontFamily: 'rob', letterSpacing: 1),
         ),
         actions: <Widget>[
           Badge(
@@ -32,65 +44,83 @@ class FoodItems extends StatelessWidget {
                   onPressed: () {
                     Navigator.of(context).pushNamed(CartScreen.routeName);
                   }),
-              value:
-                  Provider.of<Cart>(context, listen: true).itemCount.toString())
+              value: cart.itemCount().toString())
         ],
         primary: true,
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.white10,
         elevation: 0,
       ),
-      body: _buildBody(context, str3),
+      body: _buildBody(context, widget.str3, refresh),
     );
   }
 }
 
-Widget _buildBody(BuildContext context, Data z) {
+Widget _buildBody(BuildContext context, Data z, void Function() refresh) {
   String finalPath = 'restro/' + z.nameofres + '/' + z.menutype;
   print(finalPath);
   return StreamBuilder<QuerySnapshot>(
     stream: Firestore.instance.collection(finalPath).snapshots(),
     builder: (context, snapshot) {
       if (!snapshot.hasData) return LinearProgressIndicator();
-      return _buildList(context, snapshot.data.documents, z);
+      return _buildList(context, snapshot.data.documents, z, refresh);
     },
   );
 }
 
-Widget _buildList(
-    BuildContext context, List<DocumentSnapshot> snapshot, Data z) {
+Widget _buildList(BuildContext context, List<DocumentSnapshot> snapshot, Data z,
+    void Function() refresh) {
   try {
     return ListView(
       padding: const EdgeInsets.only(top: 10.0),
-      children:
-          snapshot.map((data) => _buildListItem(context, data, z)).toList(),
+      children: snapshot
+          .map((data) => _buildListItem(context, data, z, refresh))
+          .toList(),
     );
   } catch (e) {
     print(e);
     return Center(
-        child: Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: <Widget>[
-        Text("Sorry, there must a technical error !"),
-        Text("Contact Administator !"),
-      ],
+        child: Container(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Text(
+            "Snap !",
+            style: TextStyle(
+                fontFamily: 'QuickSand',
+                fontSize: 46,
+                fontWeight: FontWeight.w700),
+          ),
+          Text(
+            "Technical Error",
+            style: TextStyle(
+                fontFamily: 'QuickSand', fontSize: 26, letterSpacing: 3),
+          ),
+          Text(
+            "Please contact administator",
+            style: TextStyle(fontFamily: 'QuickSand', fontSize: 16),
+          ),
+        ],
+      ),
     ));
   }
 }
 
-Widget _buildListItem(BuildContext context, DocumentSnapshot data, Data item) {
+Widget _buildListItem(BuildContext context, DocumentSnapshot data, Data item,
+    void Function() refresh) {
   final cart = Provider.of<Cart>(context, listen: true);
   final record = Record.fromSnapshot(data);
   String itemName = record.name.toString();
   String price = "  ₹" + record.cost.toString();
-
+  final profile = Provider.of<ProfileData>(context);
   String type = record.vgvng.toString();
 
   return GFCard(
+    color: Colors.white24,
     elevation: 0,
     boxFit: BoxFit.cover,
     title: GFListTile(
       avatar: CircleAvatar(
-        radius: 10,
+        radius: 5,
         child: Image.asset(
             type == true.toString() ? 'asset/true.png' : 'asset/false.png'),
       ),
@@ -99,14 +129,41 @@ Widget _buildListItem(BuildContext context, DocumentSnapshot data, Data item) {
             Icons.add,
           ),
           onPressed: () {
-            print(record.brand);
-
-            cart.addItem(record.id, record.cost.toDouble(), record.name,
-                item.nameofres, item.menutype);
-            Scaffold.of(context).showSnackBar(SnackBar(
-              content: Text("Item was added"),
-              duration: Duration(milliseconds: 400),
-            ));
+            profile.getProfileInfo().then((onValue) => {
+                  Firestore.instance
+                      .collection("users")
+                      .document(onValue.elementAt(1))
+                      .get()
+                      .then((onValue) => {
+                            if (onValue.data['lastOrder'] == false)
+                              {
+                                refresh(),
+                                cart.addItem(
+                                  record.id,
+                                  record.cost.toDouble(),
+                                  record.name,
+                                  item.nameofres,
+                                  item.menutype,
+                                ),
+                                Scaffold.of(context).showSnackBar(SnackBar(
+                                  content: Text("Item was added"),
+                                  duration: Duration(milliseconds: 400),
+                                ))
+                              }
+                            else
+                              {
+                                showDialog(
+                                    context: context,
+                                    builder: (BuildContext context) {
+                                      return AlertDialog(
+                                        title: Text("Failed"),
+                                        content: Text(
+                                            "This happened because you are trying to add an item after placing an order. Please wait for the next shift."),
+                                      );
+                                    })
+                              }
+                          })
+                });
           }),
       title: Text(
         itemName,

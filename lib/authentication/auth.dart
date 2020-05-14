@@ -45,7 +45,8 @@ class Auth extends BaseAuth with ChangeNotifier {
         "email": user.email,
         "phone": user.phoneNumber,
         "address": null,
-        "orders": null
+        "currentOrderDate": null,
+        "currentOrderShift": null
       });
     } else {
       print("User Exists");
@@ -70,7 +71,8 @@ class Auth extends BaseAuth with ChangeNotifier {
         "email": user.email,
         "phone": user.phoneNumber,
         "address": null,
-        "orders": null
+        "currentOrderDate": null,
+        "currentOrderShift": null
       });
     } else {
       print("User Exists");

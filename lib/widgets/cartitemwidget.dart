@@ -9,19 +9,22 @@ class CartItemWidget extends StatelessWidget {
   final String title;
   final String productId;
   final String url;
+  final Function settate;
   CartItemWidget(
       {this.id,
       this.price,
       this.quantity,
       this.title,
       this.productId,
-      this.url});
+      this.url,
+      this.settate});
   @override
   Widget build(BuildContext context) {
     return Dismissible(
       direction: DismissDirection.endToStart,
       key: ValueKey(id),
       onDismissed: (direction) {
+        settate();
         Provider.of<Cart>(context, listen: false).removeItem(productId);
       },
       background: Container(

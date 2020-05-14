@@ -102,7 +102,7 @@ class _LoginPageState extends State<LoginPage> {
                     color: Colors.black87),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 100),
+                padding: const EdgeInsets.only(top: 20),
                 child: Form(
                   key: formKey,
                   child: Column(
